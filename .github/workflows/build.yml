@@ -72,7 +72,7 @@ jobs:
         compression-level: 0
   release:
     name: Create Github Release
-    if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') }}
+    # if: ${{ github.event_name == 'push' && startsWith(github.ref, 'refs/tags/') }}
     needs: [ build-x86, build-arm ]
     runs-on: ubuntu-22.04
     steps:
@@ -103,4 +103,5 @@ jobs:
           release_name: "Deno Snapshots" 
           tag: ${{ steps.tag.outputs.tag }}
           body: ${{ steps.checksums.outputs.checksums }}
+
 
