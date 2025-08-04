@@ -10,7 +10,7 @@ source $_SCRIPTDIR/common-files/termux_download.sh
 : ${_BUILD_DIR:=$_SCRIPTDIR/build}
 
 DENO_VERSION="2.4.3"
-DENO_SHA256SUM="sha256:c2644b3204aed0701bba3c6e26907251b2d89ab73873db644b4ef7b43647040b"
+DENO_SHA256SUM="c2644b3204aed0701bba3c6e26907251b2d89ab73873db644b4ef7b43647040b"
 
 __prepare_env() {
 	sudo apt update
